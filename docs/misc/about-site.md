@@ -29,7 +29,7 @@ The `tags` property is an array of one or more of the tags in `_data/tags.yml`. 
 
 ## Contributing
 
-To contribute documentation updates, use a pull request, just as you would for code.  Please notify [Rand McKinney](mailto:rmckinne@adobe.com) (**@rmckinne** in GitHub and Slack) so he can be aware of current doc status and help with editing or any issues that arise.
+To contribute documentation updates, use a pull request, just as you would for code.  
 
 There are two ways to make a docs PR:
 - **Use a branch** for small corrections such as typos, or other minor changes.  You won't be able to preview the Jekyll-rendered changes, i.e. how they will actually look in the site.   You will only be able view the markdown, but in many cases that's sufficient.
@@ -39,17 +39,17 @@ There are two ways to make a docs PR:
 
 To use a fork, follow these steps:
 
-1. Fork the repository. Generally, you should fork it into your own "user org", for example <https://git.corp.adobe.com/rmckinne/site-name>.
+1. Fork the repository. Generally, you should fork it into your own "user org".
 1. **If your edits involve more than one page**, to ensure the links in the sidebar navigation work properly, edit `/docs/_config.yml` and change the `url` to be the URL of your forked site.  So, change:
   ```
-  url: https://git.corp.adobe.com/org-name/site-name
+  url: https://github.com/org-name/site-name
   ```
   to
   ```
-  url: https://git.corp.adobe.com/<USERNAME>/site-name
+  url: https://github.com/<USERNAME>/site-name
   ```
   - **YOU MUST CHANGE THIS BACK TO ITS ORIGINAL VALUE BEFORE YOU CHECK IN YOUR CHANGES**.  If you don't, it will break the site!
-  - You don't need to make this change if you are editing only one page, but be aware that in your fork, the links in the sidebar nav will go to <https://git.corp.adobe.com/pages/org-name/site-name/>, not your fork.
+  - You don't need to make this change if you are editing only one page, but be aware that in your fork, the links in the sidebar nav will go to the template, not your fork.
 1. To make the site display an "overlay" with a prominent warning that these are draft prerelease docs, add `draft: true` to `/docs/_config.yml`.  Be sure to remove this before you land the PR from the fork.
 3. Enable GitHub Pages for your fork:
    - On the page for your GitHub fork, click **Settings**
@@ -66,12 +66,12 @@ To use a fork, follow these steps:
 
 It's possible to make a change to a page (such as a malformed Liquid directive) that will cause an error, and prevent the site from building.  If this occurs, the existing site will be unaffected, and the site will just show the last working version. However, **none of the changes in your commit/PR will be visible**.  You cannot cause such an error with basic markdown, only with Liquid tags or the sidebar navigation file (`docs/_data/sidebar.yml`).
 
-To check site status, go to <https://git.corp.adobe.com/org-name/site-name/settings> and scroll down to **GitHub Pages**.  
+To check site status, go to the repo settings **GitHub Pages**.  
 
 If you see this:
 
 <div markdown="1" style="color: #2c5a2c; background-color: #e3fee6; border: 1px solid #d2d5d9; padding: 7px 0 0 15px; width: 600px; font-size: 80%;">
-Your site is published at <https://git.corp.adobe.com/org-name/site-name/settings>
+Your site is published at <url.whaterver.com>
 </div>
 
 Then everything's good!

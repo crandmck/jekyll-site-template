@@ -121,10 +121,10 @@ Here is some styled text.
 To make a link open in a new tab, add `{: target="_blank"}` after the markdown link.  For example:
 
 ```
-[Adobe web site](https://www.adobe.com/){: target="_blank"}
+[Google web site](https://www.google.com/){: target="_blank"}
 ```
 
-Yields: [Adobe web site](https://www.adobe.com/){: target="_blank"}. When you click this link, it opens in a new tab.
+Yields: [Google web site](https://www.google.com/){: target="_blank"}. When you click this link, it opens in a new tab.
 
 ## GitHub-only display
 
@@ -137,7 +137,7 @@ Here is some text that will only be displayed in GitHub.
 {: .gh-only}
 ```
 
-You won't see the text below, but if when you [view it in GitHub](https://git.corp.adobe.com/pages/adobesensei/training-framework/contributing-docs/#github-only-style), you will see the text.
+You won't see the text below, but if when you view it in GitHub, you will see the text.
 
 Here is some text that will only be displayed in GitHub.
 {: .gh-only}

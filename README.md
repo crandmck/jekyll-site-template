@@ -1,9 +1,9 @@
-# doc-site-template
+# Jekyll site template
 
 Template for Jekyll documentation site.
 
 To use this template:
-1. Create a new repo, using this repo (<https://git.corp.adobe.com/rmckinne/doc-site-template>) as the template.
+1. Create a new repo, using this repo as the template.
 2. Edit `/docs/_config.yml` and change `mckinne/doc-site-template` to `your-org-name/your-site-name` everywhere.  Also change `site_title` and `description` properties appropriately.
 
 References:
