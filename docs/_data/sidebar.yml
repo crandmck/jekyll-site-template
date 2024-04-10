@@ -1,0 +1,21 @@
+title: Sensei Toolkit
+url: /
+children:
+
+  - title: Overview
+    url: /
+    type: top-leaf
+
+  - title: Page One
+    url: page-one.html
+    children:
+    - title: Sub-page
+      url: sub-page.html
+
+  - title: About this site
+    url: about-this-site/
+    children:
+    - title: Authoring
+      url: authoring/
+    - title: How to add a FAQ
+      url: how-to-faq/
